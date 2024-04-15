@@ -44,14 +44,14 @@
 </head>
 <body>
   <div id="perdoname">
-    <img src="gatito_arrepentido.gif" alt="Gatito arrepentido">
+    <img src="https://media.tenor.com/JK3yt5L0j_gAAAAj/sad-stitch.gif.gif" alt="Gatito arrepentido">
     <p>Me perdonas?</p>
     <div>
       <span id="no">No</span>
       <span id="si" class="expanded">Sí</span>
     </div>
     <p>Gracias, mi amor</p>
-    <img src="gatitos_besandose.gif" alt="Gatitos besándose">
+    <img src="https://i.pinimg.com/originals/96/63/da/9663da85e56ea490bc2601f7ace3b8c4.gif" alt="Gatitos besándose">
   </div>
   <a href="https://www.tudominio.com/tuarchivo.html">Enlace a la disculpa</a>
   <script>
