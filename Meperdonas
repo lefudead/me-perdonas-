@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido de Perdón y Configuración de Git</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+    #perdoname {
+      position: relative;
+      text-align: center;
+    }
+    #no {
+      transition: transform 0.3s;
+      display: inline-block;
+    }
+    #no:hover {
+      position: absolute;
+      top: calc(100vh * (Math.random()));
+      left: calc(100vw * (Math.random()));
+    }
+    #si {
+      display: none;
+    }
+    #si.expanded {
+      display: inline-block;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Configuración de Git
+      console.log('Configurando Git...');
+      console.log('git config --global user.name "Lefu"');
+      console.log('git config --global user.email "lj.lefuflas@gmail.com"');
+    });
+  </script>
+</head>
+<body>
+  <div id="perdoname">
+    <img src="gatito_arrepentido.gif" alt="Gatito arrepentido">
+    <p>Me perdonas?</p>
+    <div>
+      <span id="no">No</span>
+      <span id="si" class="expanded">Sí</span>
+    </div>
+    <p>Gracias, mi amor</p>
+    <img src="gatitos_besandose.gif" alt="Gatitos besándose">
+  </div>
+  <a href="https://www.tudominio.com/tuarchivo.html">Enlace a la disculpa</a>
+  <script>
+    document.getElementById('no').addEventListener('mouseover', function() {
+      this.style.transform = 'translate(' + Math.random() * 50 + 'px, ' + Math.random() * 50 + 'px)';
+    });
+    document.getElementById('no').addEventListener('click', function() {
+      document.getElementById('si').classList.add('expanded');
+    });
+  </script>
+</body>
+</html>
